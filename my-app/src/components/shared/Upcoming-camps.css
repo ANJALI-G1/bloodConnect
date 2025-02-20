@@ -1,0 +1,48 @@
+* {
+    padding: .5rem;
+   
+    
+}
+.cards {
+    height: 40vh;
+    font-size: 4rem;
+    font:bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/011/710/762/non_2x/donate-blood-day-vector.jpg);
+    background-repeat: no-repeat;
+    background-size: 20%; /* Width is 100% of the container, and height is 50% */
+}
+
+/* Styling the grid layout */
+.hey {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Card styling */
+.MuiCard-root {
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.MuiCard-root:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.highlight {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5) !important;
+    z-index: 2;
+}
+
+/* Adding space between cards */
+.MuiGrid-item {
+    display: flex;
+    justify-content: center;
+}

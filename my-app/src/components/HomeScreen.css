@@ -1,0 +1,240 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.div1{
+    color: white;
+}
+
+.logo {
+    color: #e50914;
+    font-size: 1.8rem;
+    width: 9.375rem; /* 150px */
+    margin-left: 0.625rem; /* 10px */
+}
+
+.homescreen {
+    position: relative;
+    height: 93vh;
+    background: url(https://static.vecteezy.com/system/resources/previews/002/910/448/large_2x/woman-hands-holding-red-heart-with-blood-donor-sign-healthcare-medicine-and-blood-donation-concept-free-photo.jpg) center no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.about-us{
+    padding: 2rem;
+    font-size: 1.5rem;
+    font:bold;
+}
+
+.Quote {
+    position: absolute;
+    display: flex;
+    right: 2.5rem; /* 40px */
+    font-size: 1.7rem;
+    top: 40vh;
+    align-items: center;
+    justify-content: center;
+    color: #e50914;
+}
+
+.heading {
+    color: #e50914;
+    position: absolute;
+    right: 18.75rem; /* 300px */
+    align-items: center;
+    justify-content: center;
+    top: 50vh;
+    font-size: 2rem;
+}
+
+.buttons {
+    height: 2.5rem; /* 40px */
+    margin: 0.625rem; /* 10px */
+    display: flex;
+    gap: 0.625rem; /* 10px */
+}
+
+.look_button, .donate_button {
+    background-color: #e50914 !important;
+    cursor: pointer;
+}
+
+.fade_button {
+    position: absolute;
+    width: 100%;
+    height: 7.5rem;
+    background-image: linear-gradient(
+        180deg,
+        transparent,
+        rgba(37, 37, 37, 0.61),
+        #111
+    );
+    bottom: 0;
+}
+
+.number {
+    display: flex;
+    height:100px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.users, .org {
+    height:200px;
+    width: 13.125rem; /* 210px */
+    height: 7.5rem; /* 120px */
+    font-size: 1.2rem;
+    background-color: #e50914;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.875rem; /* 30px */
+    border-radius: 0.3125rem; /* 5px */
+    margin: 1.25rem; /* 20px */
+    color: white;
+    transition: transform 450ms;
+    cursor: pointer;
+    box-shadow: 0.3125rem 0.3125rem 0.3125rem -0.125rem rgba(0, 0, 0, 0.75); /* 5px 5px 5px -2px */
+}
+
+.count {
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.users:hover, .org:hover {
+    transform: scale(1.09);
+    opacity: 1;
+    background-color: rgb(179, 26, 26);
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.25rem; /* 20px */
+    height: 3.125rem; /* 50px */
+}
+
+.icon {
+    width: 2.1875rem !important; /* 35px */
+    height: 2.1875rem !important; /* 35px */
+    color: #c94a4a;
+    cursor: pointer;
+}
+
+.icon:hover {
+    color: black;
+}
+
+.count-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chat {
+    border: 0.125rem solid #111; /* 2px */
+    border-radius: 50%;
+    position: absolute;
+    right: 0.3125rem; /* 5px */
+    background-color: transparent !important;
+    margin: auto !important;
+    width: 2.0625rem !important; /* 33px */
+    cursor: pointer;
+}
+
+.Ai {
+    margin: 0.1875rem !important; /* 3px */
+}
+
+.chat:hover {
+    color: red;
+}
+
+.about {
+    color: #e50914;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.about:hover {
+    color: black;
+}
+
+.nav_button {
+    background-color: aliceblue !important;
+    color: #e50914 !important;
+    padding: 0.125rem; /* 2px */
+    margin-left: 0.625rem !important; /* 10px */
+    display: flex;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #e50914;
+    height: 3.125rem; /* 50px */
+    display: flex !important;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.4375rem; /* 7px */
+}
+
+.btn {
+    position: relative;
+    right: 0.5rem; /* 8px */
+}
+
+/* Responsive Design */
+@media (max-width: 48rem) { /* 768px */
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 0.3125rem; /* 5px */
+    }
+
+    .heading, .Quote {
+        font-size: 1.2rem;
+        right: auto;
+        left: 1.25rem; /* 20px */
+        top: 30vh;
+    }
+
+    .number {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .users, .org {
+        width: 90%;
+        margin: 0.625rem 0; /* 10px */
+    }
+
+    .social {
+        flex-direction: column;
+    }
+
+    .chat {
+        right: 0.625rem; /* 10px */
+    }
+}

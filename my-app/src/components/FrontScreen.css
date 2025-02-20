@@ -1,0 +1,144 @@
+.login {
+    position: relative;
+    height: 100%;
+    background: url(https://www.makatimed.net.ph/wp-content/uploads/2021/01/1000-67.jpg) center no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.login_background {
+    color: #e50914;
+    position: fixed;
+    left: 0;
+    width: 150px;
+    object-fit: contain;
+    padding-left: 20px;
+}
+
+.login_button, .signin_button , .home_button {
+    position: fixed !important;
+    border-radius: 3px !important;
+    top: 20px !important;
+    padding: 10px 20px !important;
+    font-size: 1rem !important;
+    color: #fff !important;
+    background-color: #e50914 !important;
+    cursor: pointer !important;
+    border: none !important;
+    font-weight: 600 !important;
+}
+
+.home_button, .signin_button, .login_button {
+    position: fixed !important;
+    border-radius: 3px !important;
+    top: 20px !important;
+    padding: 10px 20px !important;
+    font-size: 1rem !important;
+    color: #fff !important;
+    background-color: #e50914 !important;
+    cursor: pointer !important;
+    border: none !important;
+    font-weight: 600 !important;
+}
+
+/* Adjust the position of each button */
+.home_button {
+    right: 230px !important; /* Place Home button before Sign Up */
+}
+
+.signin_button {
+    right: 120px !important; /* Sign Up button */
+}
+
+.login_button {
+    right: 20px !important; /* Log In button */
+}
+
+.login_gradient {
+    width: 100%;
+    z-index: 1;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0) 60%,
+        rgba(0, 0, 0, 0.8) 100%
+    );
+}
+
+.login_body {
+    position: absolute;
+    z-index: 1;
+    color: white;
+    padding: 20px;
+    top: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+.login_body h1 {
+    font-size: 3.125rem;
+}
+
+.login h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.login h3 {
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.login_input > form > input {
+    padding: 10px;
+    outline-width: 0;
+    height: 30px;
+    width: 40%;
+    border: none;
+    max-width: 600px;
+}
+
+.get_start {
+    padding: 16px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #e50914;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.login_input {
+    margin: 20px;
+}
+
+.footer {
+    background-color: transparent;
+    color: white;
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    size: 0.9rem;
+    display: flex;
+    justify-content: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .login_body h1 {
+        font-size: 2rem;
+    }
+
+    .login_button, .signin_button {
+        padding: 8px 16px !important;
+        font-size: 0.9rem !important;
+    }
+}
